@@ -28,7 +28,7 @@ export default function HomePage() {
                 navigate('/question-detail')
             }
         } catch (err) {
-
+            console.log('lỗ',err);           
         }
     }
 
