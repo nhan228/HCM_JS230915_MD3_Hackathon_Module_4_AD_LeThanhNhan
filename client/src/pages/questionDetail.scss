@@ -1,0 +1,124 @@
+.container {
+    width: 60%;
+    min-width: 60%;
+    height: 600px;
+    min-height: 600px;
+    background-color: #fff;
+    position: relative;
+    padding: 50px 50px 100px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        span {
+            color: #18eb18;
+            font-weight: 700;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+
+        p {
+            font-size: 35px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .answer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            button {
+                margin-bottom: 10px;
+                padding: 10px 0;
+                width: 60%;
+                color: black;
+                background-color: #b4d1f4;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #3362fa;
+                    color: white;
+                }
+            }
+        }
+
+        .next {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            padding: 10px;
+            width: 30%;
+            color: black;
+            font-weight: 600;
+            letter-spacing: 2px;
+            background-color: #f5910e;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #f5910e;
+                color: white;
+            }
+        }
+    }
+
+    .popUp-box {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
+
+        .popUp-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            width: 25%;
+            background-color: #fff;
+            color: black;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-y:hidden;
+            overflow-x: hidden;
+
+            h2 {
+                font-size: 30px;
+                letter-spacing: 2px;
+                margin: 0;
+            }
+            p {
+                font-size: 20px;
+                margin-top: 30px;
+            }
+            button {
+                padding: 10px;
+                width: 80%;
+                color: black;
+                background-color: rgb(255, 145, 0);
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgb(241, 138, 3);
+                    color: white;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
